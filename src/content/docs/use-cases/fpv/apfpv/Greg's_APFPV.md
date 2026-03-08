@@ -104,3 +104,9 @@ curl -L -o /tmp/openipc.ssc338q-nor-apfpv-greg08RC2.tgz https://github.com/sickg
 ## From this point forward, the setup process follows the same structure and conventions as the OpenIPC APFPV firmware. Please refer to the corresponding APFPV section in the official OpenIPC documentation.
 ### For a more detailed explanation, please refer to Greg’s official guide on GitHub:
 [Sickgreg OpenIPC_sickgregFPV_apfpv ](https://github.com/sickgreg/OpenIPC_sickgregFPV_apfpv))
+
+### Common questions about APFPV:
+1) What is the glass to glass latency of APFPV?
+   Answer: The latency depends on the ground station hardware. It is variable and can be as low as ~25ms at 720p 120fps setting. 
+2) What is the max range of APFPV?
+   Answer: The confirmed range is 2 kilometres. The test flight was made in low altitude (less than 120m) in east London, with the greg08rc2 firmware and the rtl8812eu wifi module on the drone side. https://youtu.be/MaiN2yLi4v0
