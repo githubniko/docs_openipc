@@ -12,8 +12,7 @@ sudo apt update
 ```
 
 ```
-sudo apt install dkms git python3-all-dev net-tools virtualenv fakeroot debhelper python3-twisted
-sudo apt install dkms git python3-all-dev net-tools virtualenv fakeroot debhelper python3-twisted
+sudo apt install dkms git python3-all-dev net-tools virtualenv fakeroot debhelper python3-twisted \
  libpcap-dev python3-pyroute2 python3-future python3-configparser python3-all libsodium-dev
 ```
 
