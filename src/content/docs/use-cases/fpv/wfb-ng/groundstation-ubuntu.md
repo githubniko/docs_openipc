@@ -61,17 +61,9 @@ sudo ./dkms-install.sh
 As long as your usb wifi cards were not plugged in when Ubuntu was installed, you should not have any driver conflicts with stock realtek drivers.
 
 ## WFB-NG
-WFB-NG can be installed via apt, or from source.
+WFB-NG can be installed automatically via its setup script.
 
-**Install WFB-NG from apt.**
-```
-curl -s https://apt.wfb-ng.org/public.asc | sudo gpg --dearmor --yes -o /usr/share/keyrings/wfb-ng.gpg
-echo "deb [signed-by=/usr/share/keyrings/wfb-ng.gpg] https://apt.wfb-ng.org/ $(lsb_release -cs) master" | sudo tee /etc/apt/sources.list.d/wfb-ng.list
-sudo apt update
-sudo apt install wfb-ng -y
-```
-
-**Install WFB-NG from source.**
+**Install WFB-NG from script.**
 
 First with the usb wifi card plugged in, determine its wireless interface name:
 ```
@@ -99,7 +91,7 @@ sudo ./scripts/install_gs.sh "wireless_interface_name"
 ```
 
 ## Channel configuration
-WFB-NG operates according to config settings set in /etc/wifibroadcast.cfg use this config to set the correct key, channel, and output power, etc. If you installed wfb-ng via apt, you will need to create this config file manually.
+WFB-NG operates according to config settings set in /etc/wifibroadcast.cfg use this config to set the channel, wifi region, and to route video and mavlink udp.
 ```
 sudo touch /etc/wifibroadcast.cfg
 sudo nano /etc/wifibroadcast.cfg
@@ -119,26 +111,6 @@ peer = 'connect://127.0.0.1:14550'  # outgoing connection
 [gs_video]
 peer = 'connect://127.0.0.1:5600'  # outgoing connection for
                                    # video sink (QGroundControl on GS)
-```
-
-WFB-NG also refers to `/etc/modprobe.d/wfb.conf`. If you installed wfb-ng via apt, you will need to create this file manually as well. 
-```
-sudo touch /etc/modprobe.d/wfb.conf
-sudo nano /etc/modprobe.d/wfb.conf
-```
-
-default `/etc/modprobe.d/wfb.conf` contents
-```
-# blacklist stock module
-blacklist 88XXau
-blacklist 8812au
-blacklist 8812
-options cfg80211 ieee80211_regdom=RU
-# maximize output power by default
-#options 88XXau_wfb rtw_tx_pwr_idx_override=30
-# minimize output power by default
-options 88XXau_wfb rtw_tx_pwr_idx_override=1
-options 8812eu rtw_tx_pwr_by_rate=0 rtw_tx_pwr_lmt_enable=0
 ```
 
 ## Start, stop, restart WFB-NG service
