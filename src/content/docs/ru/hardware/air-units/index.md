@@ -1,7 +1,10 @@
 ---
-title: Air Units
-description: Индекс Air Unit устройств.
+title: Передающие модули
+description: Индекс передающих модулей.
 ---
 
-Раздел Air Units сгруппирован по Runcam, OpenIPC и другим устройствам. Подробные EN-страницы Runcam WiFiLink и OpenIPC Mario/Thinker уже перенесены в новую структуру.
+Этот раздел объединяет страницы air unit для FPV-сценариев OpenIPC.
 
+- [OpenIPC](/ru/hardware/air-units/openipc/)
+- [Runcam](/ru/hardware/air-units/runcam/)
+- [Другие передающие модули](/ru/hardware/air-units/others/)

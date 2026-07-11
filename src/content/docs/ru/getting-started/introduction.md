@@ -25,8 +25,8 @@ hardware targets и практических сценариев. Перед ус
 
 - [Быстрый старт](/ru/getting-started/quick-start/) - первые проверки перед
   установкой или обновлением устройства.
-- [Hardware](/ru/hardware/) - заметки по конкретным платам и устройствам.
-- [Software](/ru/software-tools/) - обновления прошивки, UART flashing,
+- [Оборудование](/ru/hardware/) - заметки по конкретным платам и устройствам.
+- [ПО и инструменты](/ru/software-tools/) - обновления прошивки, прошивке через UART,
   Web UI и sysupgrade.
 - [FPV](/ru/use-cases/fpv/wfb-ng/quick-start/) - WFB-NG и связанные FPV-сценарии.
 - [Home Automation](/ru/use-cases/home-automation/quick-start/) - стартовая точка

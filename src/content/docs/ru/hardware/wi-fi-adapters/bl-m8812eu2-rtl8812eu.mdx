@@ -1,0 +1,76 @@
+---
+title: "RTL8812EU"
+description: "Страница документации RTL8812EU для OpenIPC wiki"
+---
+import ThemeImage from '/src/components/ThemeImage.astro'
+
+RTL8812EU - новый, недорогой и широко используемый Wi-Fi чип, который встречается во множестве Wi-Fi адаптеров. Этот чип был выпущен относительно недавно, поэтому возможности driver injection/monitor пока ограничены: сейчас поддерживается передача в режимах 5MHz, 10MHz и 20MHz, а 40MHz доступен только на приём. Это лучший выбор для прошивки APFPV. На этой странице собраны сведения об известных Wi-Fi адаптерах с этим чипом.
+
+:::caution
+Если после включения режима 40MHz изображение не принимается, прочитайте эту [статью](/ru/use-cases/fpv/wfb-ng/unbrick-eu-bu/), чтобы исправить проблему.
+:::
+
+## BL-M8812EU2
+
+LB-LINK BL-M8812EU2 - недорогой и мощный Wi-Fi адаптер, который можно встретить в [Runcam WiFiLink 1](/ru/hardware/air-units/runcam/runcam-wifilink1/).
+
+### Компоновка
+
+Вид сверху
+
+![image](/images/bl-m8812eu2-top.png)
+
+Вид снизу (с номерами пинов)
+
+<ThemeImage
+  lightSrc="/images/bl-m8812eu2-bottom-light.png"
+  darkSrc="/images/bl-m8812eu2-bottom-dark.png"
+  alt="Изображение Wi-Fi адаптера"
+/>
+
+### Распиновка
+
+| Номер пина | Функция |
+|:----------:|:-------:|
+| 1 | GND |
+| 2 | USB2.0 D+ |
+| 3 | USB2.0 D- |
+| 4 | GND |
+| 5 | RESET |
+| 6 | Вход питания 5V |
+| 7 | Вход питания 5V |
+| 8 | GND |
+
+### Характеристики
+
+| Host interface | USB 2.0 |
+|:--------------:|:-------:|
+| Power Supply | DC 5.0V +-0.25V @ 1800mA (MAX) |
+| Antenna connection | IPEX x2 |
+| Power output | &lt;=29dBm(&lt;=800mW) |
+| Supported modes | 5MHz, 10MHz, 20MHz, 40MHz (только приём) |
+
+## Runcam custom RTL8812EU
+
+Runcam custom RTL8812EU - пользовательский адаптер, сделанный Runcam для своих устройств, таких как [WiFiLink 2](/ru/hardware/air-units/runcam/runcam-wifilink2/) и [WiFiLink-RX](/ru/hardware/runcam/vrx/runcam-wifilink-rx/).
+
+### Компоновка
+
+<ThemeImage
+  lightSrc="/images/rtl8812eu-custom-runcam-top-light.png"
+  darkSrc="/images/rtl8812eu-custom-runcam-top-dark.png"
+  alt="Изображение платы сверху"
+/>
+
+### Распиновка
+
+На фотографии выше.
+
+### Характеристики
+
+| Host interface | USB 2.0 |
+|:--------------:|:-------:|
+| Power Supply | DC 5.0V |
+| Antenna connection | IPEX x2 |
+| Power output | &lt;=28dBm(FCC), &lt;=20dBm(CE) / &lt;=630mW(FCC), &lt;=100mW(CE) |
+| Supported modes | 5MHz, 10MHz, 20MHz, 40MHz (только приём) |

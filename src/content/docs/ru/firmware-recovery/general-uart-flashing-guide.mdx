@@ -1,0 +1,99 @@
+---
+title: "Общее руководство по прошивке через UART"
+description: "Универсальное руководство по прошивке через UART с использованием FTDI и TFTP."
+---
+
+## Как прошить firmware через UART
+
+### Что понадобится
+
+- FTDI FT232RL
+- miniUSB - USB кабель
+- Несколько проводов
+
+### ПО
+
+- Скачайте и установите [**Putty**](https://www.putty.org/)
+- Скачайте и установите [**Tftpd64**](https://github.com/OpenIPC/docs/raw/refs/heads/main/src/assets/files/tftpd64-windows.exe)
+
+---
+
+### Шаги прошивки
+
+1. Откройте **CMD** или **Windows Console**, введите команду:
+
+   ```bash
+   ipconfig
+   ```
+
+   ![вывод ipconfig](/images/runcamv1ip.png)
+
+   Найдите свой **IPv4 address**.
+
+2. Запустите **Tftpd64**:
+
+   ![Tftpd64](/images/tftpd.png)
+
+   [Ссылка на страницу инструкции](https://openipc.org/cameras/vendors/sigmastar/socs/ssc338q?locale=en)
+
+3. Сгенерируйте **MAC address** и укажите свой IPv4 как адрес **TFTP server**.
+4. Нажмите **Generate Instructions**.
+5. Проверьте подключение FTDI:
+
+   ![подключение FTDI](/images/ftdi.png)
+
+   - **RX** -> **TX**
+   - **TX** -> **RX**
+   - **GND** -> **GND**
+
+:::danger
+Дважды проверьте подключение UART перед подачей питания на плату. Неправильные соединения могут повредить компоненты.
+:::
+
+:::tip
+Определите подходящий интерфейс UART, как указано в документации по оборудованию.
+:::
+
+6. Припаяйте выводы FTDI к UART pads.
+7. Откройте **Device Manager**, подключите USB FTDI и найдите его **COM port**.
+8. Откройте Putty с правильным портом:
+
+   ```bash
+   putty.exe -serial COM3 -sercfg 115200,8,n,1,N
+   ```
+
+9. Откроется окно **Putty**.
+10. Подайте питание на **FTDI USB** и **Air Unit**.
+
+:::tip
+Всегда открывайте Putty **до** подачи питания на устройство, чтобы захватить boot log.
+:::
+
+11. Если всё подключено правильно, в терминале Putty появятся boot logs.
+
+    ![вывод UART в Putty](/images/runcamv1putty.png)
+
+12. Перейдите на [https://openipc.org/cameras/vendors/](https://openipc.org/cameras/vendors/).
+
+    Выберите firmware, подходящую вашему устройству, и нажмите **"Generate an installation guide"**.
+
+13. Поместите скачанный файл firmware `.bin` в папку TFTP:
+
+    ![файл прошивки TFTP](/images/runcamv1tftp1.png)
+
+14. Выполняйте инструкции **строка за строкой** (не вставляйте сразу несколько строк):
+
+    ![команда прошивки](/images/runcamv1firmware.png)
+
+15. **Если загрузка завершается ошибкой после третьей команды**, проверьте настройки TFTP-сервера.
+
+:::tip
+Убедитесь, что firewall или antivirus не блокируют связь с TFTP-сервером.
+:::
+
+16. **Пример настройки IP, если ваш роутер находится на 192.168.0.1:**
+
+   - IP устройства: `192.168.0.123`
+   - IP ПК: `192.168.0.40`
+
+17. После установки стандартной прошивки OpenIPC можно легко прошить любую совместимую FPV firmware через [Multiconfigurator](https://github.com/OpenIPC/openipc-configurator/releases/) в зависимости от устройства.
