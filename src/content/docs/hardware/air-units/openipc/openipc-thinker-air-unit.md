@@ -176,7 +176,7 @@ There are several ways to update the firmware on your Thinker Air Unit, but the 
 
 The latest standard firmware can be downloaded [here](https://github.com/OpenIPC/builder/releases/download/latest/ssc338q_fpv_openipc-thinker-aio-nor.tgz). This version (`ssc338q_fpv_openipc-thinker-aio-nor`) includes drivers for **RTL8812AU** and **RTL873xBU** WiFi modules.
 
-If you're using an [**RTL8812EU**](/use-cases/fpv/net-cards/rtl8812eu) module, use [this alternate firmware](https://github.com/OpenIPC/builder/releases/download/latest/ssc338q_fpv_openipc-urllc-aio-nor.tgz)  (`ssc338q_fpv_openipc-urllc-aio-nor`).
+If you're using an [**RTL8812EU**](/hardware/wi-fi-adapters/bl-m8812eu2-rtl8812eu) module, use [this alternate firmware](https://github.com/OpenIPC/builder/releases/download/latest/ssc338q_fpv_openipc-urllc-aio-nor.tgz)  (`ssc338q_fpv_openipc-urllc-aio-nor`).
 
 #### Advanced Configuration
 

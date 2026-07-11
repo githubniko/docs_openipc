@@ -25,8 +25,8 @@ flash layout, and recovery method before installing firmware.
 
 - [Quick Start](/getting-started/quick-start/) - first checks before installing
   or updating a device.
-- [Hardware](/hardware/hardware-page/) - board and device-specific notes.
-- [Software](/software/software-page/) - firmware updates, UART flashing, Web UI,
+- [Hardware](/hardware/) - board and device-specific notes.
+- [Software](/software-tools/) - firmware updates, UART flashing, Web UI,
   and sysupgrade notes.
 - [FPV](/use-cases/fpv/wfb-ng/quick-start/) - WFB-NG and related FPV setup paths.
 - [Home Automation](/use-cases/home-automation/quick-start/) - integration-focused

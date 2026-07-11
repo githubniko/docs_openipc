@@ -24,7 +24,7 @@ firmware, or asking for help.
   improve these docs.
 - [Quick Start](/getting-started/quick-start/) - first checks before installing
   firmware.
-- [Firmware Updates](/software/firmware-updates/) - update flow after OpenIPC is
+- [Firmware Updates](/firmware-recovery/firmware-updates/) - update flow after OpenIPC is
   already installed.
 
 ## Related projects mentioned in OpenIPC docs
