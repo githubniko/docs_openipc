@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://openipc.egorniko.ru",
+	site: "http://openipc.egorniko.ru",
 	base: "/",
 	integrations: [
 		starlight({
