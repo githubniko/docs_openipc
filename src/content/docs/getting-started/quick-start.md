@@ -18,7 +18,7 @@ boot.
 
 ## 2. Choose the right path
 
-- Use [Software](/software/software-page/) for firmware update and flashing
+- Use [Software](/software-tools/) for firmware update and flashing
   notes.
 - Use [FPV](/use-cases/fpv/wfb-ng/quick-start/) if you are building a digital
   video link.
