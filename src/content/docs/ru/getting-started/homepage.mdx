@@ -1,0 +1,31 @@
+---
+title: Документация OpenIPC
+description: Начните работу с прошивкой OpenIPC, поддерживаемым оборудованием и типовыми сценариями установки.
+---
+
+![Схема OpenIPC](/images/OpenIPC_TREE.jpg)
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## С чего начать
+
+<CardGrid stagger>
+  <Card title="Сначала проверьте оборудование" icon="camera">
+    Начните с [раздела Hardware](/ru/hardware/hardware-page/) и официального
+    [списка поддерживаемого оборудования](https://openipc.org/supported-hardware/featured).
+    Перед установкой прошивки должны совпадать SoC и разметка flash-памяти.
+  </Card>
+  <Card title="Выберите путь установки" icon="gear">
+    Откройте [быстрый старт](/ru/getting-started/quick-start/) и выберите
+    инструкцию под свой сценарий: обычная IP-камера, FPV, домашняя автоматизация
+    или видеонаблюдение.
+  </Card>
+  <Card title="Обращайтесь в сообщество" icon="group">
+    Используйте официальные ссылки OpenIPC и Telegram-группы. В вопросе укажите
+    модель устройства, SoC, boot log и точный шаг, на котором возникла проблема.
+  </Card>
+  <Card title="Помогайте документации" icon="heart">
+    Улучшайте страницы, исправляйте устаревшие инструкции или добавляйте
+    проверенные заметки по устройствам через [руководство для авторов](/ru/development/contribution-guidelines/).
+  </Card>
+</CardGrid>
