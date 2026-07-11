@@ -27,6 +27,10 @@ or SoC instead.
 The update can take several minutes. Do not power off the camera while firmware
 is being written.
 
+## Firmware Release Sources
+
+Ready-made OpenIPC firmware images are published in the [OpenIPC firmware latest release](https://github.com/OpenIPC/firmware/releases/tag/latest). Device-specific and customized images for known hardware are published from [OpenIPC Builder latest releases](https://github.com/OpenIPC/builder/releases/tag/latest). Use the image that matches the exact SoC, flash layout, and board profile for your device.
+
 ## After updating
 
 - Refresh the Web UI and check the reported firmware version.
