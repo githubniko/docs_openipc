@@ -38,7 +38,7 @@ export default defineConfig({
 						{ label: "OpenIPC", collapsed: true, autogenerate: { directory: "/hardware/air-units/openipc" } },
 						{ label: "Others", translations: { ru: "Другие" }, link: "/hardware/air-units/others/" },
 					] },
-					{ label: "Cameras", translations: { ru: "Камеры" }, collapsed: true, autogenerate: { directory: "/hardware/cameras" } },
+					{ label: "Cameras", translations: { ru: "IP-камеры" }, collapsed: true, autogenerate: { directory: "/hardware/cameras" } },
 					{ label: "Wi-Fi Adapters", translations: { ru: "Wi-Fi адаптеры" }, collapsed: true, autogenerate: { directory: "/hardware/wi-fi-adapters" } },
 					{ label: "Displays", translations: { ru: "Дисплеи" }, link: "/hardware/displays/" },
 				] },
