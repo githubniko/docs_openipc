@@ -5,11 +5,22 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://docs.openipc.org",
+	site: "https://openipc.egorniko.ru",
 	base: "/",
 	integrations: [
 		starlight({
 			title: "Documentation",
+			defaultLocale: "root",
+			locales: {
+				root: {
+					label: "English",
+					lang: "en",
+				},
+				ru: {
+					label: "Русский",
+					lang: "ru",
+				},
+			},
 			customCss: ["./src/tailwind.css"],
 			social: {
 				github: "https://github.com/OpenIPC",
