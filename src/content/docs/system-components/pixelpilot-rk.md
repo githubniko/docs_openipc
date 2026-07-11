@@ -5,6 +5,8 @@ description: Rockchip-based OpenIPC FPV video decoder and ground station display
 
 PixelPilot RK is a WFB-NG video decoder for Rockchip-based ground stations. It receives RTP video, decodes it through the Rockchip MPP stack, and displays the feed with an on-screen display for link and decoder information.
 
+![PixelPilot RK on-screen display and link statistics](/images/pixelpilot-rk-osd.webp)
+
 ## Hardware and Base Project
 
 The repository says PixelPilot RK is based on Gee He's FPVue RK project. Upstream documentation lists RK3566, such as Radxa Zero 3W, and RK3588s, such as Orange Pi 5, as tested platforms.

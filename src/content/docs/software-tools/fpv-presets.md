@@ -5,6 +5,8 @@ description: Repository format and usage notes for OpenIPC FPV configuration pre
 
 OpenIPC FPV Presets is a repository of preconfigured settings for OpenIPC FPV camera systems. The presets are intended for use from OpenIPC configuration tools and cover scenarios such as racing, freestyle, cinematic, indoor, and long-range setups.
 
+![OpenIPC Companion presets screen](/images/openipc-fpv-presets-companion.webp)
+
 The repository warns that many presets may be outdated and should be used carefully. Treat a preset as a starting point that still needs testing on the exact camera, Wi-Fi adapter, firmware, and RF environment you fly with.
 
 ## Repository Format

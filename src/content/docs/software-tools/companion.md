@@ -5,6 +5,8 @@ description: Official multi-platform configuration tool for OpenIPC cameras.
 
 OpenIPC Companion is the official multi-platform configuration application for OpenIPC cameras. It is built with Avalonia UI and is intended to manage camera settings, telemetry, presets, and firmware updates from a desktop application.
 
+![OpenIPC Companion WFB settings screen](/images/openipc-companion-wfb-settings.webp)
+
 ## Capabilities
 
 The Companion repository documents support for camera settings such as resolution, frame rate, and exposure; real-time telemetry such as temperature, voltage, and signal strength; setup wizards for device and network configuration; and YAML-based configuration editing.

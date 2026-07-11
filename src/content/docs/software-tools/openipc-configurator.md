@@ -11,6 +11,8 @@ The original Windows workflow relies on PuTTY and `Configurator.exe`. The same r
 
 The cross-platform GUI mirrors the tabbed configuration workflow and covers device management, basic settings, video settings, Wi-Fi settings, connection status, progress feedback, and remembering recently used device IP addresses.
 
+![OpenIPC Configurator running on Windows](/images/openipc-configurator-windows.webp)
+
 ## CLI Scope
 
 The CLI can download and upload configuration, choose device profiles such as `openipc`, `nvr`, or `radxa`, and work with YAML-based wireless configuration. The repository also documents maintenance commands for key material, UART, MSP extras, service restarts, firmware offline upgrade, recording, audio, MAVLink, video tuning, Radxa reset, camera factory reset, PixelPilot installation, and Adaptive Link deployment.

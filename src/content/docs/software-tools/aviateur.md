@@ -5,6 +5,8 @@ description: Cross-platform OpenIPC FPV ground station application for desktop s
 
 Aviateur is a desktop OpenIPC FPV ground station application for Linux, Windows, and macOS. It is based on the earlier [fpv4win](https://github.com/OpenIPC/fpv4win) work and is intended to let a PC or laptop receive and display an OpenIPC FPV feed.
 
+![Aviateur OpenIPC FPV ground station interface](/images/aviateur-ground-station.webp)
+
 ## Current Limits
 
 The Aviateur README documents several important limits: Windows builds do not support Adaptive Link, only RTL8812AU Wi-Fi adapters are listed as supported, and MAVLink support is not available in Aviateur.

@@ -5,6 +5,8 @@ description: Android OpenIPC FPV receiver for WFB-NG H.264/H.265 video feeds.
 
 PixelPilot for Android packages the components needed to receive and decode an H.264/H.265 video feed broadcast by WFB-NG. The app is intended for Android devices connected to supported USB Wi-Fi adapters.
 
+![PixelPilot Android video and OSD interface](/images/pixelpilot-android-osd.webp)
+
 ## Components and Compatibility
 
 The repository credits FPVue Android, the `devourer` userspace RTL8812AU driver, LiveVideo10ms, and WFB-NG as major building blocks. It supports `arm64-v8a` and `armeabi-v7a` Android devices, and the README lists Meta Quest 2 and Meta Quest 3 in non-VR mode among compatible device classes.
