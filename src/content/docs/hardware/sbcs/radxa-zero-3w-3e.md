@@ -1,6 +1,8 @@
 ---
 title: Radxa Zero 3 W/E
 description: Radxa Zero 3 W/E notes for OpenIPC ground station use.
+sidebar:
+  order: 40
 ---
 
 Radxa Zero 3W and Zero 3E boards are common small SBC choices for OpenIPC FPV ground stations. The related resources page recommends at least 2 GB RAM, with 4 GB preferred, and at least 8 GB eMMC or SD storage, with 16 GB preferred.

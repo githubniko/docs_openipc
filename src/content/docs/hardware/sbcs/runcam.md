@@ -1,6 +1,8 @@
 ---
 title: Runcam SBCs
 description: Placeholder index for Runcam SBC documentation.
+sidebar:
+  order: 50
 ---
 
 This section is reserved for Runcam SBC notes. The current repository content does not yet include a dedicated Runcam SBC page.
