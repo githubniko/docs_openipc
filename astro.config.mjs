@@ -59,6 +59,7 @@ export default defineConfig({
 					{ label: "PixelPilot Android", link: "/system-components/pixelpilot-android/" },
 					{ label: "Bidirectional Link", link: "/system-components/bidirectional-link/" },
 					{ label: "Divinus", link: "/system-components/divinus/" },
+					{ label: "Devourer", link: "/system-components/devourer/" },
 					{ label: "Majestic", link: "/system-components/majestic/" },
 					{ label: "Sysupgrade", link: "/system-components/sysupgrade/" },
 					{ label: "Web UI", link: "/system-components/web-ui/" },

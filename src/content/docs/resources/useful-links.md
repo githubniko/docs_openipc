@@ -32,5 +32,7 @@ firmware, or asking for help.
 - [Buildroot](https://buildroot.org/) - build system used by OpenIPC firmware.
 - [WFB-NG](https://github.com/svpcom/wfb-ng) - raw WiFi broadcast link commonly
   used in FPV setups.
+- [Devourer](https://github.com/OpenIPC/devourer) - userspace Realtek
+  802.11ac Wi-Fi driver used by OpenIPC for long-range digital video links.
 - [Ruby FPV](https://rubyfpv.com/) - digital FPV ecosystem that can be used with
   OpenIPC camera firmware.
