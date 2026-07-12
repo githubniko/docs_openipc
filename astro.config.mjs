@@ -66,6 +66,7 @@ export default defineConfig({
 					{ label: "Web UI", link: "/system-components/web-ui/" },
 					{ label: "Web UI Development", link: "/system-components/web-ui-development/" },
 					{ label: "Zoom", link: "/system-components/zoom/" },
+					{ label: "Third-Party Components", link: "/system-components/third-party-components/" },
 				] },
 				{ label: "Use Cases", collapsed: true, items: [
 					{ label: "Camera Surveillance", link: "/use-cases/camera-surveillance/" },
