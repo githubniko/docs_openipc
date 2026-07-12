@@ -19,9 +19,15 @@ The `zero3w-gs` README says its install script sets up a `/config` area for user
 
 The alternative SBC-GS project documents a centralized `/config/gs.conf`, WFB key storage on the FAT32 config partition, button and keyboard controls, LED status, Wi-Fi/Ethernet/USB networking, PixelPilot/FPVue/GStreamer player options, USB gadget functions, fan control, multiple Realtek Wi-Fi drivers, USB Wi-Fi hotplug, SMB sharing, recording storage, and stream forwarding over USB tethering or Ethernet.
 
+## Firmware Images
+
+Use the [latest OpenIPC SBC Ground Station release page](https://github.com/OpenIPC/sbc-groundstations/releases/tag/latest) as the entry point for Radxa Zero 3 firmware. For current Buildroot images, follow the Buildroot Edition link to the `buildroot-snapshot` release and use the `radxa_zero3_*` files.
+
+Older Stock Edition images are still linked from the same page for existing installations, including `zero3w-v1.9.9`, `zero3w-v2.0.0-beta2`, and `zero3w-apfpv-v0.0.1`.
+
 ## Related Pages
 
-- [OpenIPC SBC Ground Stations](/hardware/sbcs/sbc-groundstations/)
+- [OpenIPC SBC Ground Stations](/software-tools/sbc-groundstations/)
 - [PixelPilot RK](/system-components/pixelpilot-rk/)
 - [Adaptive Link](/system-components/adaptive-link/)
 
