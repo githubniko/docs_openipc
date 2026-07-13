@@ -98,6 +98,7 @@ export default defineConfig({
 		"/use-cases/fpv/net-cards/rtl8812eu": "/hardware/wi-fi-adapters/bl-m8812eu2-rtl8812eu/",
 		"/use-cases/fpv/net-cards/rtl8812au": "/hardware/wi-fi-adapters/bl-r8812af1-rtl8812au/",
 		"/use-cases/fpv/net-cards/rtl8731bu": "/hardware/wi-fi-adapters/bl-m8731bu3-rtl873xbu/",
+		"/hardware/cameras/hisilicon-gk7025v200-gk7025v300": "/hardware/cameras/hisilicon-gk7205v200-gk7205v300/",
 		"/hardware/OpenIPC/VRX/openipc-bonnet": "/hardware/sbcs/openipc-bonnet/",
 		"/hardware/sbcs/sbc-groundstations": "/software-tools/sbc-groundstations/",
 		"/hardware/OpenIPC/VTX/fpv-mario-aio": "/hardware/air-units/openipc/openipc-mario-aio/",
