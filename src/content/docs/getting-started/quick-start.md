@@ -20,7 +20,7 @@ boot.
 
 - Use [Software](/software-tools/) for firmware update and flashing
   notes.
-- Use [FPV](/use-cases/fpv/wfb-ng/quick-start/) if you are building a digital
+- Use [FPV](/use-cases/fpv-over-wfb-ng/quick-start/) if you are building a digital
   video link.
 - Use [Video Surveillance](/use-cases/video-surveillance/quick-start/) for
   general IP camera deployments.

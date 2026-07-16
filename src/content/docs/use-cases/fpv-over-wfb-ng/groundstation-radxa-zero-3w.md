@@ -2,6 +2,8 @@
 title: GroundStation on Radxa ZERO 3W
 description: How to make a Radxa ZERO 3W work with OpenIPC
 version: 1.9.9
+sidebar:
+  order: 4
 ---
 
 ### Radxa OpenIPC Ground Station
