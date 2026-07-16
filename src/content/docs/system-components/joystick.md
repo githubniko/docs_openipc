@@ -3,7 +3,7 @@ title: Joystick
 description: Use a USB joystick or RC transmitter as a MAVLink RC channel source for OpenIPC FPV ground stations.
 ---
 
-OpenIPC sandbox-fpv includes an experimental `rcjoystick` utility for using a USB joystick or an RC transmitter in USB joystick mode as an RC input source.
+OpenIPC includes an experimental `rcjoystick` utility for using a USB joystick or an RC transmitter in USB joystick mode as an RC input source.
 
 The tool reads Linux joystick events and sends MAVLink 2 [`RC_CHANNELS_OVERRIDE`](https://mavlink.io/en/messages/common.html#RC_CHANNELS_OVERRIDE) packets to the telemetry endpoint, commonly `127.0.0.1:14650` on the recorder. This allows more direct channel forwarding than some ground station joystick integrations, including support for up to 18 MAVLink RC channels.
 
