@@ -1,12 +1,15 @@
 ---
-title: GroundStation on Radxa ZERO 3W
-description: How to make a Radxa ZERO 3W work with OpenIPC
+title: Ground Station on Radxa Zero 3W
+description: Configure Radxa Zero 3W as an OpenIPC WFB-NG ground station
 version: 1.9.9
 sidebar:
-  order: 4
+  order: 6
 ---
 
-### Radxa OpenIPC Ground Station
+## Overview
+
+This page covers Radxa Zero 3W as a WFB-NG ground station. For board-level notes, image options, and related Radxa Zero 3W/3E resources, see [Radxa Zero 3W/3E](/hardware/sbcs/radxa-zero-3w-3e/).
+
 [Radxa 101](https://wiki.radxa.com/Zero/getting_started)
 
 ## Enclosure Models

@@ -2,7 +2,7 @@
 title: GroundStation on Ubuntu 22.04
 description: A guide for setting up a WFB-NG based groundstation on Ubuntu 22.04
 sidebar:
-  order: 5
+  order: 7
 ---
 
 Video version: - [OpenIPC - Prepare GroundStation: Ubuntu + QGroundControl](https://www.youtube.com/watch?v=JMtRAsOm0Dc)

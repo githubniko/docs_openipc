@@ -19,7 +19,7 @@ No. WFB-NG uses a Wi-Fi broadcast style link for FPV. [AP FPV over Wi-Fi](/use-c
 
 ## Where are advanced settings documented?
 
-Use [Advanced Setup](/use-cases/fpv-over-wfb-ng/advanced-setup/) for OpenIPC Companion, Ethernet setup, firmware updates, presets, and VTX configuration.
+Use [OpenIPC Companion](/use-cases/fpv-over-wfb-ng/openipc-companion/) for OpenIPC Companion, Ethernet setup, firmware updates, presets, and VTX configuration.
 
 ## How do I build a ground station?
 
@@ -34,4 +34,4 @@ Start with stable hardware and conservative WFB-NG settings. Then read [Installi
 
 ## My EU/BU-based VTX glitches in 40 MHz mode. What should I read?
 
-Read [EU/BU VTX 40 MHz issue](/use-cases/fpv-over-wfb-ng/unbrick-eu-bu/). Some EU-based cards cannot transmit in 40 MHz mode, and some BU-based cards have the same limitation.
+Read [EU/BU 40 MHz Issue](/use-cases/fpv-over-wfb-ng/eu-bu-40mhz-issue/). Some EU-based cards cannot transmit in 40 MHz mode, and some BU-based cards have the same limitation.

@@ -16,10 +16,14 @@ WFB-NG setups depend heavily on tested Wi-Fi adapters, antennas, channel width, 
 ## Section map
 
 - [Quick Start](/use-cases/fpv-over-wfb-ng/quick-start/)
-- [Advanced Setup](/use-cases/fpv-over-wfb-ng/advanced-setup/)
+- [Hardware Selection](/use-cases/fpv-over-wfb-ng/hardware-selection/)
+- [Air Unit Setup](/use-cases/fpv-over-wfb-ng/air-unit-setup/)
 - [Ground Station on Radxa Zero 3W](/use-cases/fpv-over-wfb-ng/groundstation-radxa-zero-3w/)
 - [Ground Station on Ubuntu 22.04](/use-cases/fpv-over-wfb-ng/groundstation-ubuntu/)
+- [OpenIPC Companion](/use-cases/fpv-over-wfb-ng/openipc-companion/)
+- [Link Tuning](/use-cases/fpv-over-wfb-ng/link-tuning/)
 - [Installing Adaptive Link](/use-cases/fpv-over-wfb-ng/install-adaptive-link/)
-- [EU/BU VTX 40 MHz issue](/use-cases/fpv-over-wfb-ng/unbrick-eu-bu/)
 - [WFB-NG Bitrate Calculator](/use-cases/fpv-over-wfb-ng/wfb-ng-calculator/)
+- [EU/BU 40 MHz Issue](/use-cases/fpv-over-wfb-ng/eu-bu-40mhz-issue/)
+- [Troubleshooting](/use-cases/fpv-over-wfb-ng/troubleshooting/)
 - [FAQ](/use-cases/fpv-over-wfb-ng/faq/)
