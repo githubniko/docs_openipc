@@ -3,11 +3,7 @@ title: YouTube Streaming
 description: Configure YouTube Live for OpenIPC camera streaming with HLS and H.265.
 ---
 
-This guide describes the YouTube-side setup for streaming an OpenIPC camera to YouTube Live with HLS ingestion. It is based on the legacy OpenIPC wiki guide and is useful for long-running camera streams where temporary network drops should not permanently stop the event.
-
-:::tip
-For unattended or long-running camera streams, schedule the YouTube broadcast far in the future, for example at the end of the current year. This makes it easier to resume streaming after temporary camera or network disconnects.
-:::
+This guide describes the YouTube-side setup for streaming an OpenIPC camera to YouTube Live with HLS ingestion. It is useful for long-running camera streams where temporary network drops should not permanently stop the event.
 
 ## Requirements
 
