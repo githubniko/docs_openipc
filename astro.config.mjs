@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://docs.openipc.org",
+	site: process.env.SITE || "https://docs.openipc.org",
 	base: "/",
 	integrations: [
 		starlight({
