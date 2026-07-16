@@ -56,6 +56,7 @@ export default defineConfig({
 					{ label: "MAVFWD", link: "/system-components/mavfwd/" },
 					{ label: "Adaptive Link", link: "/system-components/adaptive-link/" },
 					{ label: "Joystick", link: "/system-components/joystick/" },
+					{ label: "OpenIPC Dashboard", link: "/system-components/dashboard/" },
 					{ label: "PixelPilot RK", link: "/system-components/pixelpilot-rk/" },
 					{ label: "PixelPilot Android", link: "/system-components/pixelpilot-android/" },
 					{ label: "Bidirectional Link", link: "/system-components/bidirectional-link/" },
