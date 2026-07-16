@@ -45,6 +45,7 @@ After the first boot, connect the camera to the same network as your computer an
 
 Recommended ways:
 
+- try the commonly used OpenIPC camera address first: `http://192.168.1.10/`;
 - check the DHCP leases or client list on your router;
 - look for a new device named `openipc` or similar in the router UI;
 - scan the local subnet from your computer, for example with `nmap` if it is available:
@@ -70,7 +71,7 @@ ssh root@CAMERA_IP
 Replace `CAMERA_IP` with the actual address from your router, scan result, or UART log.
 
 :::note
-Do not assume a universal default IP. The address depends on the image, network configuration, and whether DHCP is available.
+`192.168.1.10` is a common OpenIPC camera address, but do not assume it is universal. The actual address depends on the image, network configuration, and whether DHCP is available.
 :::
 
 ## 5. First Login
