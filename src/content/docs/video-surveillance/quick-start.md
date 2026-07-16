@@ -19,7 +19,7 @@ Before flashing, identify:
 - UART pads and bootloader access method;
 - existing firmware backup options.
 
-Start with [Supported SoC](/video-surveillance/soc/) and the relevant hardware page. If the exact board is unknown, do not assume that a similar-looking camera uses the same flash layout.
+Start with [OpenIPC supported hardware](https://openipc.org/supported-hardware/featured) and the relevant hardware page. If the exact board is unknown, do not assume that a similar-looking camera uses the same flash layout.
 
 ## 2. Prepare Recovery Tools
 
