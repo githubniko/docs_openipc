@@ -70,7 +70,6 @@ export default defineConfig({
 					{ label: "Devourer", link: "/system-components/devourer/" },
 					{ label: "Majestic", link: "/system-components/majestic/" },
 					{ label: "Web UI Development", link: "/system-components/web-ui-development/" },
-					{ label: "Zoom", link: "/system-components/zoom/" },
 					{ label: "Third-Party Components", link: "/system-components/third-party-components/" },
 				] },
 				{ label: "Use Cases", collapsed: true, items: [
@@ -116,6 +115,7 @@ export default defineConfig({
 		"/use-cases/fpv-over-wfb-ng/unbrick-eu-bu": "/use-cases/fpv-over-wfb-ng/eu-bu-40mhz-issue/",
 		"/use-cases/fpv/wfb-ng/wfb-ng-calculator": "/use-cases/fpv-over-wfb-ng/wfb-ng-calculator/",
 		"/development/webface-guide": "/system-components/web-ui-development/",
+		"/system-components/zoom": "/system-components/third-party-components/",
 		"/use-cases/fpv/net-cards/rtl8812eu": "/hardware/wi-fi-adapters/bl-m8812eu2-rtl8812eu/",
 		"/use-cases/fpv/net-cards/rtl8812au": "/hardware/wi-fi-adapters/bl-r8812af1-rtl8812au/",
 		"/use-cases/fpv/net-cards/rtl8731bu": "/hardware/wi-fi-adapters/bl-m8731bu3-rtl873xbu/",
