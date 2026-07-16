@@ -110,6 +110,7 @@ export default defineConfig({
 		"/use-cases/fpv/wfb-ng/groundstation-radxa-zero-3w": "/use-cases/fpv-over-wfb-ng/groundstation-radxa-zero-3w/",
 		"/use-cases/fpv/wfb-ng/groundstation-ubuntu": "/use-cases/fpv-over-wfb-ng/groundstation-ubuntu/",
 		"/use-cases/fpv/wfb-ng/install-adaptive-link": "/use-cases/fpv-over-wfb-ng/install-adaptive-link/",
+		"/hardware/runcam/vtx/installing-alink-runcam": "/use-cases/fpv-over-wfb-ng/install-adaptive-link/",
 		"/use-cases/fpv/wfb-ng/unbrick-eu-bu": "/use-cases/fpv-over-wfb-ng/eu-bu-40mhz-issue/",
 		"/use-cases/fpv-over-wfb-ng/unbrick-eu-bu": "/use-cases/fpv-over-wfb-ng/eu-bu-40mhz-issue/",
 		"/use-cases/fpv/wfb-ng/wfb-ng-calculator": "/use-cases/fpv-over-wfb-ng/wfb-ng-calculator/",
