@@ -80,11 +80,11 @@ export default defineConfig({
 				] },
 				{ label: "Development", collapsed: true, items: [
 					{ label: "Contribution Guidelines", link: "/development/contribution-guidelines/" },
-					{ label: "Projects & Applications", link: "/development/projects-applications/", badge: { text: "WIP", variant: "caution" } },
+					{ label: "Projects & Applications", link: "/development/projects-applications/" },
 				] },
 				{ label: "Resources", collapsed: true, items: [
-					{ label: "Frequently Asked Questions", link: "/resources/faq/", badge: { text: "WIP", variant: "caution" } },
-					{ label: "Useful Links", link: "/resources/useful-links/", badge: { text: "WIP", variant: "caution" } },
+					{ label: "Frequently Asked Questions", link: "/resources/faq/" },
+					{ label: "Useful Links", link: "/resources/useful-links/" },
 				] },
 				{ label: "Reference", collapsed: true, autogenerate: { directory: "reference" } },
 			],
