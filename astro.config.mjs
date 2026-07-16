@@ -29,6 +29,11 @@ export default defineConfig({
 					{ label: "Quick Start", link: "/getting-started/quick-start/" },
 					{ label: "Roadmap", link: "/getting-started/roadmap/" },
 				] },
+				{ label: "Video Surveillance", collapsed: false, items: [
+					{ label: "Overview", link: "/video-surveillance/" },
+					{ label: "Quick Start", link: "/video-surveillance/quick-start/" },
+					{ label: "Supported SoC", link: "/video-surveillance/soc/" },
+				] },
 				{ label: "Hardware", collapsed: true, items: [
 					{ label: "Overview", link: "/hardware/" },
 					{ label: "SBCs", collapsed: true, autogenerate: { directory: "/hardware/sbcs" } },
@@ -40,11 +45,6 @@ export default defineConfig({
 					{ label: "IP Cameras", collapsed: true, autogenerate: { directory: "/hardware/cameras" } },
 					{ label: "Wi-Fi Adapters", collapsed: true, autogenerate: { directory: "/hardware/wi-fi-adapters" } },
 					{ label: "Displays", link: "/hardware/displays/" },
-				] },
-				{ label: "Video Surveillance", collapsed: false, items: [
-					{ label: "Overview", link: "/video-surveillance/" },
-					{ label: "Quick Start", link: "/video-surveillance/quick-start/" },
-					{ label: "Supported SoC", link: "/video-surveillance/soc/" },
 				] },
 				{ label: "Firmware & Recovery", collapsed: true, autogenerate: { directory: "/firmware-recovery" } },
 				{ label: "Software & Tools", collapsed: true, items: [
@@ -74,7 +74,7 @@ export default defineConfig({
 				] },
 				{ label: "Use Cases", collapsed: true, items: [
 					{ label: "FPV over WFB-NG", collapsed: true, autogenerate: { directory: "/use-cases/fpv-over-wfb-ng" } },
-					{ label: "AP FPV over Wi-Fi", collapsed: true, autogenerate: { directory: "/use-cases/ap-fpv-over-wi-fi" } },
+					{ label: "FPV over Wi-Fi (APFPV)", collapsed: true, autogenerate: { directory: "/use-cases/ap-fpv-over-wi-fi" } },
 					{ label: "OpenWrt", link: "/use-cases/openwrt/" },
 					{ label: "YouTube Streaming", link: "/use-cases/youtube-streaming/" },
 				] },
