@@ -32,6 +32,8 @@ export default defineConfig({
 				{ label: "Video Surveillance", collapsed: false, items: [
 					{ label: "Overview", link: "/video-surveillance/" },
 					{ label: "Quick Start", link: "/video-surveillance/quick-start/" },
+					{ label: "Streams and Majestic", link: "/video-surveillance/streams-and-majestic/" },
+					{ label: "NVR Integration", link: "/video-surveillance/nvr-integration/" },
 					{ label: "Supported SoC", link: "/video-surveillance/soc/" },
 				] },
 				{ label: "Hardware", collapsed: true, items: [

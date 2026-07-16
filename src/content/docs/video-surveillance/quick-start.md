@@ -1,72 +1,63 @@
 ---
 title: Quick Start
-description: A guide on how to turn your camera into an IP surveillance camera.
+description: Bring up an OpenIPC camera as a standard IP surveillance camera.
 ---
-This guide will help you get started on turning your camera into an IP Security Camera!
 
-## Key Steps Overview
+Use this guide as the shortest path from a supported camera board to a working OpenIPC surveillance camera.
 
-1. **Flashing your camera with OpenIPC**
-2. **Setting up your camera for the first time**
-3. **Setting up Majestic**
-4. **Additional Resources**
+:::caution
+First-time installation may require UART access, soldering, a TFTP server, or direct flash recovery. Check the exact board and SoC before writing firmware.
+:::
 
-> **Note:** You might need to solder to flash your camera, This might not be easy for the average Joe.
+## 1. Identify the Hardware
 
-## Hardware Requirements
+Before flashing, identify:
 
-- **Camera**: A camera with a supported SoC
+- SoC vendor and model;
+- image sensor model;
+- flash type and flash size;
+- UART pads and bootloader access method;
+- existing firmware backup options.
 
-- **FTDI Adapter**: Essential for the flashing process.
-  ![FTDI Adapter](/images/sbs-ftdi.jpg)
+Start with [Supported SoC](/video-surveillance/soc/) and the relevant hardware page. If the exact board is unknown, do not assume that a similar-looking camera uses the same flash layout.
 
-  - [FTDI Adapter Purchase Link](https://www.ebay.co.uk/itm/203581591537?hash=item2f66688ff1)
+## 2. Prepare Recovery Tools
 
-- **Additional Supplies**: Wires and a soldering iron.
+Keep recovery tools ready before changing firmware:
 
-> **Note:** This is all the basic requirements needed for a basic IP Security Camera.
+- USB-UART adapter;
+- serial terminal such as PuTTY, `screen`, or `minicom`;
+- TFTP server when the install flow needs one;
+- matching firmware image from OpenIPC releases or Builder;
+- stable power supply.
 
-### Step 1: Flashing your camera with OpenIPC
+For a generic UART workflow, use [General UART Flashing Guide](/firmware-recovery/general-uart-flashing-guide/). For broken bootloaders, see [Defib](/firmware-recovery/defib/), [Unbrick: SigmaStar](/firmware-recovery/unbrick-sigmastar/), or [Unbrick: Ingenic](/firmware-recovery/unbrick-ingenic/).
 
-#### Step 1.1: Flashing the Camera
+## 3. Install OpenIPC
 
-- **Connection Points**: Identify the UART connection points on the camera board.
-  ![Camera Pinout](/images/sbs-Camera-Pinout.jpg)
-- **Using FTDI Adapter**: Connect the camera to the FTDI adapter for console access.
-- **Flashing Process**: Use console commands to flash the OpenIPC firmware onto the camera.
-> **Note:** If you get garbled output or no output, Try flipping RX and TX.
+Use the installation commands generated for the exact device or SoC. Run bootloader commands line by line and keep power stable while flash is being written.
 
-#### Step 1.2: Setting up Serial Terminal Emulation
+After flashing, let the camera boot fully before disconnecting power.
 
-- **MacOS Instructions**: Utilize built-in commands to establish a connection.
-- **Windows Instructions**: Install and use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) for serial terminal emulation.
+## 4. First Login
 
-#### Step 1.3: Setting up a TFTP Server
+Default credentials on many OpenIPC builds are:
 
-- **MacOS**: Activate the built-in TFTP server.
-- **Windows**: Install a TFTP server application, such as SolarWinds.
+```text
+username: root
+password: 12345
+```
 
-#### Step 1.4: Getting the Correct Firmware Image
+Change the password during first setup. Verify that SSH and the Web UI work before changing stream settings.
 
-- Download the appropriate OpenIPC firmware for your camera's SoC.
-  - [Firmware Download Page](https://openipc.org/supported-hardware/featured)
+## 5. Verify Video
 
-#### Step 1.5: Opening a Console and Flashing the Camera
+Open the Web UI and confirm that the camera produces a live image. Then verify RTSP or snapshot access with [Streams and Majestic](/video-surveillance/streams-and-majestic/).
 
-- Boot the camera while connected to the serial console and flash the firmware.
-- While plugging in the camera, You may have to hold Enter to enter the bootloader.
-- Follow the provided commands from the firmware download page.
+## 6. Connect to an NVR
 
-### Step 2: Setting up your camera for the first time
+After the camera is stable, add it to your recorder or monitoring system. See [NVR Integration](/video-surveillance/nvr-integration/).
 
-- If you have trouble getting in, Use 'root' for the username and '12345' for the password.
-- You will be asked to set the password and be given the option to put the web interface into dark mode.
-- Make sure to use a secure password!
+## 7. Update Safely
 
-### Step 3: Setting up Majestic
-
-- Due to major changes to the web interface at this time, This information is not available at the moment.
-
-### Step 4: Additional Resources
-
-- GPIO Pinout: https://github.com/OpenIPC/wiki/blob/master/en/gpio-settings.md
+When OpenIPC is already installed and booting normally, use [Firmware Updates](/firmware-recovery/firmware-updates/) or [Sysupgrade](/firmware-recovery/online-sysupgrade/). Do not update production cameras without a recovery path.
