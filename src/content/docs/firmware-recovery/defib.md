@@ -1,5 +1,5 @@
 ---
-title: "Defib Camera Recovery Tool"
+title: "Web-Based Camera Recovery Tool"
 description: "Recover bricked IP cameras with the Defib Web UI or CLI over UART, TFTP, and supported boot ROM protocols."
 ---
 
