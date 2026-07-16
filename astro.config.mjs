@@ -44,7 +44,6 @@ export default defineConfig({
 					] },
 					{ label: "IP Cameras", collapsed: true, autogenerate: { directory: "/hardware/cameras" } },
 					{ label: "Wi-Fi Adapters", collapsed: true, autogenerate: { directory: "/hardware/wi-fi-adapters" } },
-					{ label: "Displays", link: "/hardware/displays/" },
 				] },
 				{ label: "Firmware & Recovery", collapsed: true, autogenerate: { directory: "/firmware-recovery" } },
 				{ label: "Software & Tools", collapsed: true, items: [
@@ -95,6 +94,7 @@ export default defineConfig({
 	redirects: {
 		"/": "/getting-started/homepage",
 		"/hardware/hardware-page": "/hardware/",
+		"/hardware/displays": "/hardware/",
 		"/software/software-page": "/software-tools/",
 		"/software/general-uart-flashing-guide": "/firmware-recovery/general-uart-flashing-guide/",
 		"/software/sysupgrade": "/firmware-recovery/online-sysupgrade/",
