@@ -39,7 +39,41 @@ Use the installation commands generated for the exact device or SoC. Run bootloa
 
 After flashing, let the camera boot fully before disconnecting power.
 
-## 4. First Login
+## 4. Find the Camera IP
+
+After the first boot, connect the camera to the same network as your computer and find the address assigned to it.
+
+Recommended ways:
+
+- check the DHCP leases or client list on your router;
+- look for a new device named `openipc` or similar in the router UI;
+- scan the local subnet from your computer, for example with `nmap` if it is available:
+
+```bash
+nmap -sn 192.168.1.0/24
+```
+
+If you installed through UART, watch the serial boot log. OpenIPC usually prints network initialization and the assigned address during boot.
+
+When you find the address, open the Web UI in a browser:
+
+```text
+http://CAMERA_IP/
+```
+
+For SSH access, use:
+
+```bash
+ssh root@CAMERA_IP
+```
+
+Replace `CAMERA_IP` with the actual address from your router, scan result, or UART log.
+
+:::note
+Do not assume a universal default IP. The address depends on the image, network configuration, and whether DHCP is available.
+:::
+
+## 5. First Login
 
 Default credentials on many OpenIPC builds are:
 
@@ -50,14 +84,14 @@ password: 12345
 
 Change the password during first setup. Verify that SSH and the Web UI work before changing stream settings.
 
-## 5. Verify Video
+## 6. Verify Video
 
 Open the Web UI and confirm that the camera produces a live image. Then verify RTSP or snapshot access with [Streams and Majestic](/video-surveillance/streams-and-majestic/).
 
-## 6. Connect to an NVR
+## 7. Connect to an NVR
 
 After the camera is stable, add it to your recorder or monitoring system. See [NVR Integration](/video-surveillance/nvr-integration/).
 
-## 7. Update Safely
+## 8. Update Safely
 
 When OpenIPC is already installed and booting normally, use [Firmware Updates](/firmware-recovery/firmware-updates/) or [Sysupgrade](/firmware-recovery/online-sysupgrade/). Do not update production cameras without a recovery path.
