@@ -86,7 +86,6 @@ export default defineConfig({
 					{ label: "Useful Links", link: "/resources/useful-links/", badge: { text: "WIP", variant: "caution" } },
 				] },
 				{ label: "Reference", collapsed: true, autogenerate: { directory: "reference" } },
-				{ label: "Team", link: "/team/" },
 			],
 		}),
 		tailwind({ applyBaseStyles: false }),
