@@ -41,6 +41,11 @@ export default defineConfig({
 					{ label: "Wi-Fi Adapters", collapsed: true, autogenerate: { directory: "/hardware/wi-fi-adapters" } },
 					{ label: "Displays", link: "/hardware/displays/" },
 				] },
+				{ label: "Video Surveillance", collapsed: false, items: [
+					{ label: "Overview", link: "/video-surveillance/" },
+					{ label: "Quick Start", link: "/video-surveillance/quick-start/" },
+					{ label: "Supported SoC", link: "/video-surveillance/soc/" },
+				] },
 				{ label: "Firmware & Recovery", collapsed: true, autogenerate: { directory: "/firmware-recovery" } },
 				{ label: "Software & Tools", collapsed: true, items: [
 					{ label: "Overview", link: "/software-tools/" },
@@ -68,7 +73,6 @@ export default defineConfig({
 					{ label: "Third-Party Components", link: "/system-components/third-party-components/" },
 				] },
 				{ label: "Use Cases", collapsed: true, items: [
-					{ label: "Camera Surveillance", link: "/use-cases/camera-surveillance/" },
 					{ label: "FPV over WFB-NG", collapsed: true, autogenerate: { directory: "/use-cases/fpv-over-wfb-ng" } },
 					{ label: "AP FPV over Wi-Fi", collapsed: true, autogenerate: { directory: "/use-cases/ap-fpv-over-wi-fi" } },
 					{ label: "OpenWrt", link: "/use-cases/openwrt/" },
@@ -95,6 +99,9 @@ export default defineConfig({
 		"/software/general-uart-flashing-guide": "/firmware-recovery/general-uart-flashing-guide/",
 		"/software/sysupgrade": "/firmware-recovery/online-sysupgrade/",
 		"/software/firmware-updates": "/firmware-recovery/firmware-updates/",
+		"/use-cases/camera-surveillance": "/video-surveillance/",
+		"/use-cases/video-surveillance/quick-start": "/video-surveillance/quick-start/",
+		"/use-cases/video-surveillance/soc": "/video-surveillance/soc/",
 		"/development/webface-guide": "/system-components/web-ui-development/",
 		"/use-cases/fpv/net-cards/rtl8812eu": "/hardware/wi-fi-adapters/bl-m8812eu2-rtl8812eu/",
 		"/use-cases/fpv/net-cards/rtl8812au": "/hardware/wi-fi-adapters/bl-r8812af1-rtl8812au/",
